@@ -1,4 +1,3 @@
-#sudo apt install socat
 #!/bin/bash -e 
 
 #!bash
