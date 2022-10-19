@@ -71,7 +71,7 @@ sudo ip netns exec $NS2 ip route add default via $BRIDGE_IP dev veth21
 # ------------------- Step 3 Specific Setup --------------------- #
 
 echo "Setting the route on the node to reach the network namespaces on the other node"
-sudo ip route add $TO_BRIDGE_SUBNET via $TO_NODE_IP dev enp0s3
+sudo ip route add $TO_BRIDGE_SUBNET via $TO_NODE_IP dev eth0
 
 echo "Enables IP forwarding on the node"
 sudo sysctl -w net.ipv4.ip_forward=1
