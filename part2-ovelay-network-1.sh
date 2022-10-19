@@ -43,7 +43,7 @@ sudo ip link set dev veth10 master br0
 sudo ip link set dev veth20 master br0
 
 echo "Assigning the IP address to the bridge"
-sudo ip addr add $BRIDGE_IP/24 dev br0
+sudo ip addr add $BRIDGE_IP/24 dev enp0s3
 
 echo "Enabling the bridge"
 sudo ip link set dev br0 up
