@@ -1,5 +1,5 @@
 #!/bin/bash
-if ["$#" -ne 1]; then
+if [ "$#" -ne 1 ]; then
     echo "Incorrect args. usage: $0 <interface>"
     exit 1
 fi
